@@ -17,17 +17,31 @@
             <form>
                 <div>
                     <label for="title">Title:</label>
-                    <input type="text" name="title" id="user-email">
+                    <input type="text" name="title" id="title">
                 </div>
                 <div>
-                    <label for="user-password">Password:</label>
-                    <input type="text" name="user-password" id="user-password">
+                    <label for="general-comments">General Thoughts:</label>
+                    <textarea name="general-comments" id="general-comments" cols="30" rows="5"></textarea>
                 </div>
-                <div>
-                    <label for="password-confirm">Confirm Password:</label>
-                    <input type="text" name="password-confirm" id="password-confirm">
+                <fieldset>
+                    <legend>Song Info</legend>
+                    <div>
+                        <label for="song-1">Song Title:</label>
+                        <input type="text" name="song-1" id="song-1">
+                    </div>
+                    <div>
+                        <label for="artist-1">Artist Name:</label>
+                        <input type="text" name="artist-1" id="artist-1">
+                    </div>
+                    <div>
+                        <label for="comment-1">Thoughts on song:</label>
+                        <textarea name="comment-1" id="comment-1" cols="30" rows="5"></textarea>
+                    </div>              
+                </fieldset>
+                <div class='add-song-field'>
+                    <button>Add another song</button>
                 </div>
-                <button type="submit">Signup</button>
+                <button type="submit">Create Exchange</button>
             </form>
         </section>
     </main>
